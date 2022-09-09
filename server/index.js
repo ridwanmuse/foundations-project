@@ -7,16 +7,16 @@ app.use(cors());
 app.use(express.json());
 
 const {
-    getItems,
-    postItem,
+    getAffirmation,
+    postAffirmation,
     
 } = require("./controller");
 
 
 
-app.get('/api/items', getItems); 
+app.get('/api/items', getAffirmation); 
 
-app.post('/api/items', postItem);
+app.post('/api/items', postAffirmation);
 
 
 
