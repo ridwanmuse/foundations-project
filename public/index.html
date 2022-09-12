@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>rm website</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<nav class="navbar">
-		<div class="navbar__container">
-			<a href="/" id="navbar__logo">RM</a>
-			<div class="navbar__toggle" id="mobile-menu">
-				<span class="bar"></span><span class="bar"></span>
-				<span class="bar"></span>
-			</div>
-			<ul class="navbar__menu">
-				<li class="navbar__item">
-					<a href="/" class="navbar__links">home</a>
-				</li>
-				<li class="navbar__item">
-					<a href="/index.js" class="navbar__links">tech</a>
-				</li>
-				<li class="navbar__item">
-					<a href="/" class="navbar__links">messages</a>
-				</li>
-				<li class="navbar__btn">
-					<a href="/" class="button">sign up</a></li>
-			</ul>
-			
+    <title>hiiiiiiii </title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+      h1 {text-align: center;}
+      p {text-align:center;}
+     div {text-align: center;}
+     body {text-align: center}
+      form {
+        border: 2px solid lightgray;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body class="container">
+            <button class ='feelings' id="place">fear</button>
+            <button class ='feelings' id="ritual">surprise</button>
+            <button class ='feelings' id="ritual">sadness</button>
+            <button class ='feelings' id="ritual">trust</button>
+            <button class ='feelings' id="ritual">love</button>
 
-		</div>
-	</nav>
-	
-</body>
-</html>
+        <h1></h1>
+    </header>
+            <p> welcome to recieve your daily affirmations!  </p>
+          
+            
+          <script src="server.js"></script>
+
+          <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+          
+          
+          </body>
+          </html>
