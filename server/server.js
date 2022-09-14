@@ -12,26 +12,21 @@ const {
     getMessage4,
     getMessage5,
     putMessage,
-    postMessage2
+    postMessage2,
 } = require("./controller");
 
-app.get("/api/message", getMessage);
+app.get('/api/messages',getMessage);
+app.get('/api/messages', getMessage2); 
+app.get('/api/messages', getMessage3); 
+app.get('/api/messages', getMessage4); 
+app.get('/api/messages', getMessage5); 
 
-app.get('/api/message2', getMessage2);
+app.put('/api/messages', putMessage);
+app.post('/api/messages', postMessage2);
 
-app.get('/api/message3', getMessage3); 
 
-app.get('/api/message4', getMessage4); 
 
-app.get('/api/message5', getMessage5); 
 
-app.put('/api/Message', putMessage);
-
-app.post('/api/Message2',postMessage2);
-
-app.listen(3000, () => console.log("Server running on 3000"));
-
-const PORT = 3000;
 
 app.listen(PORT,()=>
 console.log(`listening on ${PORT}`)
