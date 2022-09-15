@@ -1,103 +1,60 @@
+body{
+	background-color: #fff;
+	margin: 0;
+	padding:0;
 
-h1 {text-align: center;}
-p {text-align: center;}
-p{
-    font-size: 300%;
 }
 
-body {
-  background: rgb(136, 117, 141);
-  padding: 1rem;
-  max-width: 500px;
-  margin: 2rem auto;
-  font-family: "Open Sans", sans-serif;
-}
-
-nav {
-	border-bottom: 2px solid rgb(0, 0, 0);
-}
-
-ol {
-	padding-left: 0;
-}
-
-.crumb {
-	margin-right: 2em;
-	display: inline;
-}
-
-a {
-	color: rgb(0, 0, 0);
-}
-
-a:visited {
-	color: rgb(0, 0, 0);
+.content{
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 300px;
+	font-size: larger;
+	font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
-input {
-	display: block;
-}
-
-img {
-	max-width: 250px;
-}
-
-.themes {
-	background-color: #d2bbdf; 
-	border-radius: 1px;
-	width: 130px;
+  
+  .form{
 	display: flex;
-	border: 0px solid hwb(264 72% 7%);
-  }
+	
+	text-align: center;
+	font-display:initial;}
 
-  body {
-  background: rgb(239, 235, 240);
-  margin: 1rem;
-  padding: 1rem;
-  max-width: 500px;
-  margin: 2rem auto;
-  font-family: "Open Sans", sans-serif;
-}
-
-nav {
-	border-bottom: 2px solid rgb(0, 0, 0);
-}
-
-ol {
-	padding-left: 0;
-}
-
-.crumb {
-	margin-right: 2em;
-	display: inline;
-}
-
-a {
-	color: rgb(0, 0, 0);
-}
-
-a:visited {
-	color: rgb(0, 0, 0);
-}
-
-
-input {
-	display: block;
-}
-
-img {
-	max-width: 250px;
-}
-
-.themes {
-	background-color: #d2bbdf; 
-	border-radius: 1px;
-	width: 130px;
+  .form-center{
 	display: flex;
-	border: 1px solid hwb(264 72% 7%);
+	justify-content: center;
+  }
+  .login_form {
+	width: 320px;
+	height: 520px;
+	background-color: rgba(1, 1, 1, 0.4);
+	border: 1px solid black;
+	box-shadow: 0 0 5px 2px #111;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+	color: #fff;
+	border-top: 1px solid white;}
+  h2{
+	text-align: center;
+
   }
 
-  .buttons{
-    box-sizing: content-box;
+
+.login_form label,
+.login_form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+  label{
+	text-align: center;
   }
+
+  
+	
+  

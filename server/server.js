@@ -1,33 +1,33 @@
+const path= require('path')
 const express = require ('express');
 const cors = require ('cors');
 const app = express ();
+const { 
+    getHappiness,
+    getSadness,
+    getAnger, 
+    getDisgust, 
+    getFear,
+    getSurprise
+} = require("./controller");
+
 
 app.use(cors());
 app.use(express.json());
-
-const {
-    getMessage,
-    getMessage2,
-    getMessage3,
-    getMessage4,
-    getMessage5,
-    putMessage,
-    postMessage2,
-} = require("./controller");
-
-app.get('/api/messages',getMessage);
-app.get('/api/messages', getMessage2); 
-app.get('/api/messages', getMessage3); 
-app.get('/api/messages', getMessage4); 
-app.get('/api/messages', getMessage5); 
-
-app.put('/api/messages', putMessage);
-app.post('/api/messages', postMessage2);
+app.use('/client', express.static(path.join(__dirname, '../client')));
 
 
+app.get("/api/happiness",getHappiness);
+app.get("/api/sadness",getSadness)
+app.get("/api/anger",getAnger)
+app.get("/api/disgust",getDisgust)
+app.get("/api/fear",getFear)
+app.get("/api/surprise",getSurprise)
+app.delete("/api/anger", deleteAnger);
 
-
+const PORT = 3000;
 
 app.listen(PORT,()=>
 console.log(`listening on ${PORT}`)
 );
+

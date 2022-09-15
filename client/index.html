@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>animated login form </title>
-    <link href="styles.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guide to emotions - welcome! </title>
+    <link rel="stylesheet" href="/client/styles.css">
 </head>
-<body>
-    <nav>
+<body>  
+  <header>  
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>GUIDE TO EMOTIONS</h1>
+      <p> the first step towards emotional awarness is to identify how you feel and why</p>
+    <section>  <form action="/client/profile.html" method="get"> 
+        <label><b> first name    
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="first name">    
+        <br><br>    
+        <label><b> last name     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="last name">    
+        <br><br>    
+        <input type="button" name="log" id="log" value="log in here">      
+      </section>
+
         
-    </nav>
 
-    <header>
-        <h1></h1>
-    </header>
-            <p> login to learn about the different types of emotions!  </p>
-            <form action="profile.html" method="get">>
-              <div class="imgcontainer">
-                
-              </div>
-              
-              <div class="container">
-                <label for="uname"><b>first name</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-            
-                <label for="psw"><b>last name</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-            
-                <button type="submit">Login
-                <label>
-                  <input 
-           
-                  
-             class="container" 
-           
-              div></button>
-             
-            </form>
+    </form>     
+  <h2>random motivational quote:</h2>
+  <div id="quoteBox"></div>
+  <button id="quoteDisplay">display</button>
+<!-- <button onclick="newQuote()"> New Quote</button> -->
+<script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src = "/client/index.js"></script>
+</body>
+</html>
 
-     
 
-          
-          
-          
-          </body>
-          </html>
+
